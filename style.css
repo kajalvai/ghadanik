@@ -1,0 +1,161 @@
+/* সাধারণ স্টাইল */
+body {
+  font-family: "Noto Sans Bengali", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #ffecd2, #fcb69f);
+  color: #333;
+}
+
+header {
+  background: #b71c1c;
+  color: #fff;
+  text-align: center;
+  padding: 25px 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav {
+  background: #880e4f;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 12px 0;
+}
+
+nav a {
+  color: #fff;
+  margin: 5px 15px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  background: #b71c1c;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 15px 30px 15px;
+}
+
+h2 {
+  text-align: center;
+  color: #880e4f;
+  margin-bottom: 25px;
+}
+
+/* Form স্টাইল */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+input, textarea, select, button {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+button {
+  background: #388e3c;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button:hover {
+  background: #2e7d32;
+}
+
+/* Success message */
+.success {
+  margin-top: 15px;
+  padding: 10px;
+  background: #c8e6c9;
+  border-radius: 6px;
+  color: #256029;
+  display: none;
+}
+
+/* Card view */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+.card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  padding: 15px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+}
+.card h3 {
+  color: #b71c1c;
+  margin-bottom: 10px;
+}
+.card p {
+  margin: 6px 0;
+}
+.card img {
+  max-width: 100%;
+  margin: 6px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.card img:hover {
+  transform: scale(1.05);
+}
+a.media-link {
+  color: #1976d2;
+  text-decoration: none;
+}
+a.media-link:hover {
+  text-decoration: underline;
+}
+
+/* লাইটবক্স */
+#lightbox {
+  position: fixed;
+  display: none;
+  top:0; left:0; right:0; bottom:0;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+#lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+/* রেস্পন্সিভ */
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+  nav a {
+    margin: 5px 10px;
+    padding: 6px 10px;
+  }
+}
