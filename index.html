@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ঘাতক দালাল নির্মূল কমিটি - তথ্য জমা দিন</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ঘাতক দালাল নির্মূল কমিটি</h1>
+    <p>আপনার এলাকার দুর্নীতি, অসঙ্গতি, মাদক, সুদের ব্যবসা এবং অন্যান্য তথ্য শেয়ার করুন</p>
+  </header>
+
+  <nav>
+    <a href="index.html">হোম</a>
+    <a href="admin.html">অভিযোগ তালিকা</a>
+  </nav>
+
+  <div class="container">
+    <h2>তথ্য জমা ফর্ম</h2>
+    <form id="infoForm">
+      <label for="name">আপনার নাম (ঐচ্ছিক):</label>
+      <input type="text" id="name" name="name" placeholder="নাম লিখুন">
+
+      <label for="category">ধরণ:</label>
+      <select id="category" name="category" required>
+        <option value="">-- নির্বাচন করুন --</option>
+        <option value="দুর্নীতি/অসঙ্গতি">দুর্নীতি/অসঙ্গতি</option>
+        <option value="মাদক ব্যবসা/সেবন">মাদক ব্যবসা/সেবন</option>
+        <option value="সুদের ব্যবসা">সুদের ব্যবসা</option>
+        <option value="চাঁদাবাজি">চাঁদাবাজি</option>
+        <option value="অবনতি/উন্নয়ন পরামর্শ">অবনতি/উন্নয়ন পরামর্শ</option>
+      </select>
+
+      <label for="details">বিস্তারিত তথ্য/পরামর্শ:</label>
+      <textarea id="details" name="details" rows="5" placeholder="বিস্তারিত লিখুন..." required></textarea>
+
+      <label for="images">ছবি আপলোড (একাধিক ছবি আপলোড করতে পারেন):</label>
+      <input type="file" id="images" name="images" accept="image/*" multiple>
+
+      <label for="media">ভিডিও/অডিও লিঙ্ক (ঐচ্ছিক):</label>
+      <input type="url" id="media" name="media" placeholder="YouTube বা অন্য মিডিয়া লিঙ্ক">
+
+      <button type="submit">জমা দিন</button>
+      <div class="success">তথ্য সফলভাবে জমা হয়েছে। ধন্যবাদ!</div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
